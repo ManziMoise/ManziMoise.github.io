@@ -1,0 +1,118 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+    background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#container{
+    width: 50%;
+    max-width: 660px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+
+
+#container #tabbed-content{
+    margin: 30px;
+    
+}
+#container ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+    animation: slide_up 2.2s ease;
+	
+}
+
+#container li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+    animation: slide_up 2.2s ease;
+}
+#container li:hover{
+    border-color: darkred;
+}
+
+
+
+
+
+
+#user-list, #tabbed-content{
+    margin: 30px;
+}
+
+#user-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+    animation: slide_up 2.2s ease;
+	
+}
+
+#user-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+    animation: slide_up 2.2s ease;
+	
+}
+
+#user-list li:hover{
+    border-color: darkred;
+}
+
+.btn{
+    float: left;
+    margin-left: 46%;
+    
+    margin-top: 10px;
+    background: darkred;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    
+    
+}
+
+.getbtn{
+    float: right;
+    background: darkred;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover{
+    background: darkred;
+}
+
+
+
+@keyframes slide_up{
+0%{
+	transform: translateY(250px);
+
+}
+100%{
+	transform: translateY(0px);
+}
+
+}
+
+
